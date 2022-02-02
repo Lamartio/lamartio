@@ -1,6 +1,6 @@
 import * as React from "react";
 import {FunctionComponent} from "react";
-import {Typography} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 import {Row} from "./Row";
 import {MDXRenderer} from "gatsby-plugin-mdx";
 import {MuiMDXProvider} from "./MuiMDXProvider";
@@ -12,8 +12,10 @@ export const Employment: FunctionComponent<EmploymentData> = ({data}) => {
 
     return <Row badge={<EmploymentInfo data={data.frontmatter}/>}>
         <Typography gutterBottom variant="h5">{data.frontmatter.employer}</Typography>
-        <MuiMDXProvider>
-            <MDXRenderer>{data.body}</MDXRenderer>
-        </MuiMDXProvider>
+        <Box sx={{pb: 3}}>
+            <MuiMDXProvider>
+                <MDXRenderer>{data.body}</MDXRenderer>
+            </MuiMDXProvider>
+        </Box>
     </Row>;
 }

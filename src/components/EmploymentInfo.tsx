@@ -1,12 +1,12 @@
 import * as React from "react";
 import {FunctionComponent} from "react";
-import {Divider, Paper, Stack, Typography} from "@mui/material";
+import {Button, Divider, Paper, Stack, Typography} from "@mui/material";
 
 
-export type EmploymentInfoData = { employer: string, occupation: string, start: string, end: string }
+export type EmploymentInfoData = { employer: string, occupation: string, start: string, end: string, link: string }
 
 export const EmploymentInfo: FunctionComponent<{ data: EmploymentInfoData }> =
-    ({data: {employer, occupation, start, end}}) =>
+    ({data: {employer, occupation, start, end, link}}) =>
         <Paper elevation={0} sx={{whiteSpace: 'inherit'}}>
             <Stack
                 sx={{px: 2}}
@@ -41,5 +41,6 @@ export const EmploymentInfo: FunctionComponent<{ data: EmploymentInfoData }> =
                         </Typography>
                     </Divider>
                 </Stack>
+                <Button variant="outlined" sx={{mt: 2}} onClick={() => window.open(link)}>visit</Button>
             </Stack>
         </Paper>

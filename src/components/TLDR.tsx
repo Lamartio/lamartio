@@ -17,7 +17,7 @@ const data = [
     {
         color: 'secondary' as ChipColor,
         name: 'languages',
-        tags: ['Kotlin', 'Java', 'Typescript', 'Swift', 'C#', 'NodeJs', 'Git']
+        tags: ['Kotlin', 'Java', 'Typescript', 'Swift', 'C#', 'NodeJs', 'Git', 'webGL', 'TDD']
     },
     {
         color: 'success' as ChipColor,

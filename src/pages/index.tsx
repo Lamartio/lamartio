@@ -6,7 +6,7 @@ import {Header} from "../components/Header";
 import {Welcome} from "../components/Welcome";
 import {About} from "../components/About";
 import {Contact} from "../components/Contact";
-import {Work} from "../components/Work";
+import {Career} from "../components/Career";
 
 const IndexPage: FunctionComponent = () => {
     return <ThemeProvider theme={theme}>
@@ -15,7 +15,7 @@ const IndexPage: FunctionComponent = () => {
             <Header/>
             <Welcome/>
             <About/>
-            <Work/>
+            <Career/>
             <Contact/>
         </Container>
     </ThemeProvider>
