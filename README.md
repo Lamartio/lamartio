@@ -1,7 +1,5 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://tenor.com/view/nyan-cat-rainbow-cat-kitten-kitty-gif-5716621" width="120" />
-  </a>
+    <img alt="Gatsby" src="./nyan-cat-rainbow.gif" width="300" />
 </p>
 <h1 align="center">
   Danny Lamarti
