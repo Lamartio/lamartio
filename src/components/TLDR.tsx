@@ -17,10 +17,15 @@ const data = [
     {
         color: 'secondary' as ChipColor,
         name: 'languages',
-        tags: ['Kotlin', 'Java', 'Typescript', 'Swift', 'C#', 'NodeJs', 'Git']
+        tags: ['Kotlin', 'Java', 'Typescript', 'Swift', 'C#', 'NodeJs', 'Git', 'webGL']
     },
     {
         color: 'success' as ChipColor,
+        name: 'languages',
+        tags: ['functional programming', 'reactive programming', 'TDD', 'OOP']
+    },
+    {
+        color: 'warning' as ChipColor,
         name: 'certificates',
         tags: ['PSM 1', 'Holobody', '10X (TBA)']
     },
@@ -37,10 +42,10 @@ export const TLDR: FunctionComponent = () =>
                         justifyContent: 'flex-start',
                         flexWrap: 'wrap',
                         listStyle: 'none',
-                        py: 0.5,
+                        p: 0,
                         m: 0,
                     }}>
-                    {tags.map((tag, i) => <Chip key={i} label={tag} color={color} sx={{mr: .5}}/>)}
+                    {tags.map((tag, i) => <Chip key={i} label={tag} color={color} sx={{mt: 0.5, mr: .5}}/>)}
                 </Box>
             )}
         </Box>

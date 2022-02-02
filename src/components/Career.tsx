@@ -6,7 +6,7 @@ import {graphql, useStaticQuery} from "gatsby";
 import {TLDR} from "./TLDR";
 import {Employment} from "./Employment";
 
-export const Work: FunctionComponent = () => {
+export const Career: FunctionComponent = () => {
     const data = useStaticQuery(graphql`
         {
             allMdx(
@@ -23,6 +23,7 @@ export const Work: FunctionComponent = () => {
                             end
                             employer
                             occupation
+                            link
                         }
                     }
                 }
@@ -33,7 +34,7 @@ export const Work: FunctionComponent = () => {
 
     return <>
         <Row>
-            <Typography gutterBottom variant="h3" sx={{mt:10}}>Work</Typography>
+            <Typography gutterBottom variant="h3" sx={{mt:10}}>Career</Typography>
         </Row>
         <TLDR/>
         {nodes.map(node => <Employment key={node.id} data={node}/>)}
