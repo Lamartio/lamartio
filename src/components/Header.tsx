@@ -8,7 +8,7 @@ export const Header: FunctionComponent = () =>
         justifyContent="flex-start"
         alignItems={{xs: 'stretch', sm: 'center'}}
         spacing={2}
-        sx={{mb:4}}
+        sx={{mb:2}}
     >
         <Typography variant="h3" component="span" sx={{ textAlign: 'center' }}>Danny Lamarti</Typography>
         <Divider textAlign='right' sx={{flexGrow: 1}}>
