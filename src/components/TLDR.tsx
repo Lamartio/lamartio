@@ -7,6 +7,7 @@ import {Row} from "./Row";
 
 
 type ChipColor = OverridableStringUnion<'default' | 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning', ChipPropsColorOverrides>
+
 const data = [
     {
         color: 'primary' as ChipColor,
@@ -16,7 +17,7 @@ const data = [
     {
         color: 'secondary' as ChipColor,
         name: 'languages',
-        tags: ['Kotlin', 'Java', 'Typescript', 'Swift', 'C#', 'NodeJs']
+        tags: ['Kotlin', 'Java', 'Typescript', 'Swift', 'C#', 'NodeJs', 'Git']
     },
     {
         color: 'success' as ChipColor,
@@ -25,21 +26,20 @@ const data = [
     },
 ]
 
-export const TLDR: FunctionComponent = () => {
-    return <Row badge={<Typography variant="h3" component="span">✨</Typography>}>
-            {data.map(({tags, name, color}) => {
-                return <Box
-                    key={name}
-                    sx={{
-                        display: 'flex',
-                        justifyContent: 'flex-start',
-                        flexWrap: 'wrap',
-                        listStyle: 'none',
-                        py: 0.5,
-                        m: 0,
-                    }}>
-                    {tags.map((e, i) => <Chip key={i} label={e} color={color} sx={{mr: .5}}/>)}
-                </Box>
-            })}
+export const TLDR: FunctionComponent = () =>
+    <Row badge={<Typography variant="h5" component="span">TL;DR</Typography>}>
+        {data.map(({tags, name, color}) => {
+            return <Box
+                key={name}
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'flex-start',
+                    flexWrap: 'wrap',
+                    listStyle: 'none',
+                    py: 0.5,
+                    m: 0,
+                }}>
+                {tags.map((e, i) => <Chip key={i} label={e} color={color} sx={{mr: .5}}/>)}
+            </Box>
+        })}
     </Row>
-}

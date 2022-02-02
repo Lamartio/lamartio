@@ -12,22 +12,22 @@ export const Header: FunctionComponent = () =>
     >
         <Typography variant="h3" component="span" sx={{ textAlign: 'center' }}>Danny Lamarti</Typography>
         <Divider textAlign='right' sx={{flexGrow: 1}}>
-            <Stack
-                direction="row"
-                justifyContent="flex-start"
-                alignItems="center"
-                spacing={1}
-                divider={<Divider orientation="vertical" flexItem/>}
-            >
-                <Typography variant="subtitle2" component="span">
-                    about
-                </Typography>
-                <Typography variant="subtitle2" component="span">
-                    work
-                </Typography>
-                <Typography variant="subtitle2" component="span">
-                    contact
-                </Typography>
-            </Stack>
+            {/*<Stack*/}
+            {/*    direction="row"*/}
+            {/*    justifyContent="flex-start"*/}
+            {/*    alignItems="center"*/}
+            {/*    spacing={1}*/}
+            {/*    divider={<Divider orientation="vertical" flexItem/>}*/}
+            {/*>*/}
+            {/*    <Typography variant="subtitle2" component="span">*/}
+            {/*        about*/}
+            {/*    </Typography>*/}
+            {/*    <Typography variant="subtitle2" component="span">*/}
+            {/*        work*/}
+            {/*    </Typography>*/}
+            {/*    <Typography variant="subtitle2" component="span">*/}
+            {/*        contact*/}
+            {/*    </Typography>*/}
+            {/*</Stack>*/}
         </Divider>
     </Stack>
