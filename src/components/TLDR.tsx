@@ -28,18 +28,20 @@ const data = [
 
 export const TLDR: FunctionComponent = () =>
     <Row badge={<Typography variant="h5" component="span">TL;DR</Typography>}>
-        {data.map(({tags, name, color}) => {
-            return <Box
-                key={name}
-                sx={{
-                    display: 'flex',
-                    justifyContent: 'flex-start',
-                    flexWrap: 'wrap',
-                    listStyle: 'none',
-                    py: 0.5,
-                    m: 0,
-                }}>
-                {tags.map((e, i) => <Chip key={i} label={e} color={color} sx={{mr: .5}}/>)}
-            </Box>
-        })}
+        <Box sx={{mb: 3}}>
+            {data.map(({tags, name, color}) =>
+                <Box
+                    key={name}
+                    sx={{
+                        display: 'flex',
+                        justifyContent: 'flex-start',
+                        flexWrap: 'wrap',
+                        listStyle: 'none',
+                        py: 0.5,
+                        m: 0,
+                    }}>
+                    {tags.map((tag, i) => <Chip key={i} label={tag} color={color} sx={{mr: .5}}/>)}
+                </Box>
+            )}
+        </Box>
     </Row>

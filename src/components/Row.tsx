@@ -1,9 +1,11 @@
 import * as React from "react";
 import {FunctionComponent} from "react";
-import {Divider, Grid} from "@mui/material";
+import {Divider, Grid, GridProps} from "@mui/material";
 
-export const Row: FunctionComponent<{ badge?: JSX.Element }> = ({badge, children}) =>
-    <Grid container spacing={3}>
+
+export type RowProps = GridProps & { badge?: JSX.Element }
+export const Row: FunctionComponent<RowProps> = ({badge, children}) => {
+    return <Grid container spacing={3} >
         <Grid item xs={12} sm={5} md={4}>
             {
                 badge
@@ -14,4 +16,5 @@ export const Row: FunctionComponent<{ badge?: JSX.Element }> = ({badge, children
         <Grid item xs={12} sm={7} md={8}>
             {children}
         </Grid>
-    </Grid>
+    </Grid>;
+}

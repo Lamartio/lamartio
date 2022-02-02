@@ -33,7 +33,7 @@ export const Work: FunctionComponent = () => {
 
     return <>
         <Row>
-            <Typography gutterBottom variant="h3">Work</Typography>
+            <Typography gutterBottom variant="h3" sx={{mt:10}}>Work</Typography>
         </Row>
         <TLDR/>
         {nodes.map(node => <Employment key={node.id} data={node}/>)}
