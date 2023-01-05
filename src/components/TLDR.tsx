@@ -32,7 +32,7 @@ const data = [
 ]
 
 export const TLDR: FunctionComponent = () =>
-    <Row badge={<Typography variant="h5" component="span">TL;DR</Typography>}>
+    <Row badge={<Typography variant="h3" component="span">📖</Typography>}>
         <Box sx={{mb: 3}}>
             {data.map(({tags, name, color}) =>
                 <Box

@@ -17,7 +17,7 @@ export const Contact: FunctionComponent = () =>
             <Button
                 component="span"
                 variant="contained"
-                onClick={() => window.open("mailto:lamarti.danny@gmail.com")}>
+                onClick={() => window.open("mailto:lamarti.danny+mesite@gmail.com")}>
                 send me an email
             </Button>
             <Button
