@@ -10,6 +10,5 @@ export const Career: FunctionComponent = () => {
             <Typography gutterBottom variant="h3" sx={{mt:10}}>Career</Typography>
         </Row>
         <TLDR/>
-        {/*{nodes.map(node => <Employment key={node.id} data={node}/>)}*/}
     </>;
 }
