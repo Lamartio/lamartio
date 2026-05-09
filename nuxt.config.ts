@@ -9,6 +9,10 @@ export default defineNuxtConfig({
     '@nuxtjs/seo'
   ],
 
+  devServer: {
+    port: 3100
+  },
+
   devtools: {
     enabled: true
   },

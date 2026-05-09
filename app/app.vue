@@ -4,7 +4,7 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' }
+    { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
   ],
   htmlAttrs: {
     lang: 'en'
@@ -55,7 +55,7 @@ const navItems = [
           variant="ghost"
         />
         <UButton
-          to="https://linkedin.com/in/danny-lamarti"
+          to="https://www.linkedin.com/in/dannylamarti"
           target="_blank"
           icon="i-simple-icons-linkedin"
           aria-label="LinkedIn"
@@ -93,7 +93,7 @@ const navItems = [
           variant="ghost"
         />
         <UButton
-          to="https://linkedin.com/in/danny-lamarti"
+          to="https://www.linkedin.com/in/dannylamarti"
           target="_blank"
           icon="i-simple-icons-linkedin"
           aria-label="LinkedIn"
