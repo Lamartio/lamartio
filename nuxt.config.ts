@@ -17,10 +17,6 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-01-15',
 
-  ogImage: {
-    enabled: false
-  },
-
   eslint: {
     config: {
       stylistic: {
@@ -28,5 +24,9 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  ogImage: {
+    enabled: false
   }
 })
