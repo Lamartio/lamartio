@@ -1,34 +1,14 @@
 <script setup lang="ts">
 const skills = [
-  { label: 'Vue', icon: 'i-simple-icons-vuedotjs' },
-  { label: 'Nuxt', icon: 'i-simple-icons-nuxtdotjs' },
-  { label: 'TypeScript', icon: 'i-simple-icons-typescript' },
-  { label: 'Tailwind CSS', icon: 'i-simple-icons-tailwindcss' },
   { label: 'Kotlin', icon: 'i-simple-icons-kotlin' },
-  { label: 'Node.js', icon: 'i-simple-icons-nodedotjs' },
-  { label: 'Docker', icon: 'i-simple-icons-docker' },
-  { label: 'Git', icon: 'i-simple-icons-git' }
-]
-
-const projects = [
-  {
-    title: 'Reactive Framework',
-    description: 'A reactive state management library built with Kotlin Multiplatform, enabling shared business logic across Android, iOS, and web.',
-    icon: 'i-lucide-layers',
-    tags: ['Kotlin', 'Multiplatform', 'Reactive']
-  },
-  {
-    title: 'Design System',
-    description: 'Component library and design tokens powering consistent UI across multiple products. Built with Vue 3 and Tailwind CSS.',
-    icon: 'i-lucide-palette',
-    tags: ['Vue', 'Tailwind', 'Tokens']
-  },
-  {
-    title: 'Developer Platform',
-    description: 'Internal platform streamlining CI/CD pipelines, feature flags, and monitoring for engineering teams.',
-    icon: 'i-lucide-terminal',
-    tags: ['Nuxt', 'TypeScript', 'DevOps']
-  }
+  { label: 'Swift', icon: 'i-simple-icons-swift' },
+  { label: 'TypeScript', icon: 'i-simple-icons-typescript' },
+  { label: 'Android', icon: 'i-simple-icons-android' },
+  { label: 'iOS', icon: 'i-simple-icons-apple' },
+  { label: 'Nuxt', icon: 'i-simple-icons-nuxtdotjs' },
+  { label: 'Next.js', icon: 'i-simple-icons-nextdotjs' },
+  { label: 'Vue', icon: 'i-simple-icons-vuedotjs' },
+  { label: 'Tailwind CSS', icon: 'i-simple-icons-tailwindcss' }
 ]
 </script>
 
@@ -59,21 +39,21 @@ const projects = [
       </template>
 
       <template #description>
-        Software engineer crafting modern web experiences with Vue, Nuxt, and TypeScript.
-        I build things that are fast, accessible, and a joy to use.
+        Freelance senior software engineer specializing in client-facing technologies.
+        Mobile (Android &amp; iOS) and web (Nuxt, Next) — with Kotlin, Swift, and TypeScript.
       </template>
 
       <template #links>
         <UButton
-          to="/about"
-          label="About me"
+          to="mailto:lamarti.danny@gmail.com"
+          label="Get in touch"
           trailing-icon="i-lucide-arrow-right"
           size="xl"
         />
         <UButton
-          to="#work"
-          label="View my work"
-          icon="i-lucide-code-2"
+          to="/about"
+          label="About me"
+          icon="i-lucide-user"
           size="xl"
           color="neutral"
           variant="subtle"
@@ -85,7 +65,7 @@ const projects = [
     <UPageSection
       headline="Tech Stack"
       title="Tools I work with"
-      description="Technologies I use daily to build modern, performant applications."
+      description="Technologies I use daily to build mobile and web applications."
       :ui="{
         title: 'font-mono tracking-tight',
         headline: 'font-mono'
@@ -105,53 +85,11 @@ const projects = [
       </div>
     </UPageSection>
 
-    <!-- Featured Work -->
-    <UPageSection
-      id="work"
-      headline="Featured Work"
-      title="Things I've built"
-      description="A selection of projects that showcase my approach to software engineering."
-      :ui="{
-        title: 'font-mono tracking-tight',
-        headline: 'font-mono'
-      }"
-    >
-      <UPageGrid>
-        <UPageCard
-          v-for="project in projects"
-          :key="project.title"
-          :title="project.title"
-          :description="project.description"
-          :icon="project.icon"
-          variant="outline"
-          spotlight
-          spotlight-color="primary"
-          :ui="{
-            title: 'font-mono',
-            description: 'leading-relaxed'
-          }"
-        >
-          <template #footer>
-            <div class="flex flex-wrap gap-1.5">
-              <UBadge
-                v-for="tag in project.tags"
-                :key="tag"
-                :label="tag"
-                variant="subtle"
-                size="sm"
-                class="font-mono"
-              />
-            </div>
-          </template>
-        </UPageCard>
-      </UPageGrid>
-    </UPageSection>
-
     <!-- CTA -->
     <UPageSection>
       <UPageCTA
         title="Let's work together"
-        description="I'm always interested in new opportunities, challenging projects, and great conversations about technology."
+        description="Looking for a senior engineer to build your next mobile or web app? Let's talk."
         variant="subtle"
         :ui="{
           title: 'font-mono tracking-tight'
@@ -165,7 +103,7 @@ const projects = [
           },
           {
             label: 'View on GitHub',
-            to: 'https://github.com/niclamarti',
+            to: 'https://github.com/Lamartio',
             target: '_blank',
             icon: 'i-simple-icons-github',
             color: 'neutral' as const,

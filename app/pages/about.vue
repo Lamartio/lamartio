@@ -1,18 +1,18 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'About — Danny Lamarti',
-  description: 'Software engineer with a passion for building modern web and mobile applications with Vue, Nuxt, Kotlin, and TypeScript.'
+  description: 'Freelance senior software engineer building client-facing mobile and web apps with Kotlin, Swift, and TypeScript.'
 })
 
 const experience = [
   {
-    role: 'Senior Software Engineer',
-    company: 'Current',
+    role: 'Freelance Senior Software Engineer',
+    company: 'Self-employed',
     period: 'Present',
-    description: 'Building modern web applications with Vue, Nuxt, and TypeScript. Leading frontend architecture decisions and mentoring junior developers.'
+    description: 'Building client-facing mobile and web applications for companies across industries. Specializing in Android, iOS, and modern web frameworks.'
   },
   {
-    role: 'Software Engineer',
+    role: 'Senior Software Engineer',
     company: 'Previous',
     period: 'Earlier',
     description: 'Developed cross-platform solutions with Kotlin Multiplatform. Built reactive frameworks and design systems used across multiple products.'
@@ -20,14 +20,14 @@ const experience = [
 ]
 
 const techStack = {
-  Languages: ['TypeScript', 'Kotlin', 'JavaScript', 'HTML/CSS'],
-  Frameworks: ['Vue', 'Nuxt', 'Tailwind CSS', 'Kotlin Multiplatform'],
+  Mobile: ['Kotlin', 'Swift', 'Android', 'iOS', 'Kotlin Multiplatform'],
+  Web: ['TypeScript', 'Vue', 'Nuxt', 'Next.js', 'Tailwind CSS'],
   Tools: ['Git', 'Docker', 'Node.js', 'Vite'],
   Practices: ['Reactive Programming', 'Design Systems', 'CI/CD', 'Accessibility']
 }
 
 const socials = [
-  { label: 'GitHub', icon: 'i-simple-icons-github', to: 'https://github.com/niclamarti' },
+  { label: 'GitHub', icon: 'i-simple-icons-github', to: 'https://github.com/Lamartio' },
   { label: 'LinkedIn', icon: 'i-simple-icons-linkedin', to: 'https://linkedin.com/in/danny-lamarti' },
   { label: 'Email', icon: 'i-lucide-mail', to: 'mailto:lamarti.danny@gmail.com' }
 ]
@@ -44,7 +44,11 @@ const socials = [
       }"
     >
       <template #headline>
-        <UBadge variant="subtle" size="md" class="font-mono">
+        <UBadge
+          variant="subtle"
+          size="md"
+          class="font-mono"
+        >
           /about
         </UBadge>
       </template>
@@ -54,8 +58,8 @@ const socials = [
       </template>
 
       <template #description>
-        I'm a software engineer who loves turning complex problems into elegant solutions.
-        With experience spanning web and mobile, I focus on building tools and systems that developers and users genuinely enjoy.
+        Freelance senior software engineer specializing in client-facing technologies.
+        I build mobile and web apps that users love — from native Android and iOS to modern web with Nuxt and Next.
       </template>
     </UPageHero>
 
@@ -84,7 +88,12 @@ const socials = [
                 {{ job.company }}
               </p>
             </div>
-            <UBadge variant="subtle" color="neutral" size="sm" class="font-mono">
+            <UBadge
+              variant="subtle"
+              color="neutral"
+              size="sm"
+              class="font-mono"
+            >
               {{ job.period }}
             </UBadge>
           </div>
@@ -105,7 +114,10 @@ const socials = [
       }"
     >
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
-        <div v-for="(items, category) in techStack" :key="category">
+        <div
+          v-for="(items, category) in techStack"
+          :key="category"
+        >
           <h3 class="font-mono font-semibold text-sm text-primary mb-3">
             {{ category }}
           </h3>

@@ -11,8 +11,8 @@ useHead({
   }
 })
 
-const title = 'Danny Lamarti — Software Engineer'
-const description = 'Software engineer crafting modern web experiences with Vue, Nuxt, and TypeScript.'
+const title = 'Danny Lamarti — Freelance Senior Software Engineer'
+const description = 'Freelance senior software engineer building client-facing mobile and web apps with Kotlin, Swift, and TypeScript.'
 
 useSeoMeta({
   title,
@@ -32,7 +32,10 @@ const navItems = [
   <UApp>
     <UHeader title="lamartio">
       <template #title>
-        <NuxtLink to="/" class="font-mono font-bold text-lg tracking-tight">
+        <NuxtLink
+          to="/"
+          class="font-mono font-bold text-lg tracking-tight"
+        >
           lamartio
         </NuxtLink>
       </template>
@@ -44,7 +47,7 @@ const navItems = [
       <template #right>
         <UColorModeButton />
         <UButton
-          to="https://github.com/niclamarti"
+          to="https://github.com/Lamartio"
           target="_blank"
           icon="i-simple-icons-github"
           aria-label="GitHub"
@@ -62,7 +65,10 @@ const navItems = [
       </template>
 
       <template #body>
-        <UNavigationMenu :items="navItems" orientation="vertical" />
+        <UNavigationMenu
+          :items="navItems"
+          orientation="vertical"
+        />
       </template>
     </UHeader>
 
@@ -79,7 +85,7 @@ const navItems = [
 
       <template #right>
         <UButton
-          to="https://github.com/niclamarti"
+          to="https://github.com/Lamartio"
           target="_blank"
           icon="i-simple-icons-github"
           aria-label="GitHub"
