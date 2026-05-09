@@ -6,9 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/a11y',
     '@nuxt/hints',
     '@nuxt/image',
-    '@artmizu/nuxt-prometheus',
-    '@nuxtjs/seo',
-    '@nuxtjs/storybook'
+    '@nuxtjs/seo'
   ],
 
   devtools: {
@@ -17,11 +15,11 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  routeRules: {
-    '/': { prerender: true }
-  },
-
   compatibilityDate: '2025-01-15',
+
+  ogImage: {
+    enabled: false
+  },
 
   eslint: {
     config: {
