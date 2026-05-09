@@ -28,7 +28,7 @@ const techStack = {
 
 const socials = [
   { label: 'GitHub', icon: 'i-simple-icons-github', to: 'https://github.com/Lamartio' },
-  { label: 'LinkedIn', icon: 'i-simple-icons-linkedin', to: 'https://linkedin.com/in/danny-lamarti' },
+  { label: 'LinkedIn', icon: 'i-simple-icons-linkedin', to: 'https://www.linkedin.com/in/dannylamarti' },
   { label: 'Email', icon: 'i-lucide-mail', to: 'mailto:lamarti.danny@gmail.com' }
 ]
 </script>
